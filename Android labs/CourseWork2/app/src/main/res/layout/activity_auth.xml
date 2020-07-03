@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#e1f9f7"
+    android:orientation="vertical"
+    tools:context=".AuthActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="50dp"
+        android:hint="Введите адрес электронной почты"
+        android:id="@+id/emailInputAuth"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Введите пароль"
+        android:id="@+id/passwordInputAuth"/>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Вход"
+        android:id="@+id/btnSignIn"
+        android:onClick="signIn"
+        />
+
+</LinearLayout>

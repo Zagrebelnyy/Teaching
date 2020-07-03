@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#e1f9f7"
+    tools:context=".FormActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войдите или зарегестрируйтесь"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#171603"
+        android:layout_margin="10dp"
+        >
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Войти"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/btnAuth"
+        android:onClick="clickAuth"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Регистрация"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/btnReg"
+        android:onClick="clickReg"
+        />
+</LinearLayout>

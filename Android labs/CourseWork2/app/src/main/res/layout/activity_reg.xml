@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e1f9f7"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="50dp"
+        android:hint="Введите адрес электронной почты"
+        android:id="@+id/emailInputReg"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Введите пароль"
+        android:id="@+id/passwordInputReg1"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Введите пароль ещё раз"
+        android:id="@+id/passwordInputReg2"/>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Регистрация"
+        android:id="@+id/btnCreateNewAcc"
+        android:onClick="createNewAcc"
+        />
+</LinearLayout>

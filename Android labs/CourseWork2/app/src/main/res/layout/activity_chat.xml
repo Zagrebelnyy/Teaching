@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f9f7"
+    android:orientation="vertical"
+    tools:context=".ChatActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaf7f6"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Введите сообщение"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/send_message_btn"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@android:color/transparent"
+            android:onClick="clickSendMessage"
+            android:src="@drawable/send_btn_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
