@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\Мои файлы\Универ\Программная инженерия\Структуры и алгоритмы\DictionaryWithDuplicates\Source.cpp(151,36): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  DictionaryWithDuplicates.vcxproj -> D:\Мои файлы\Универ\Программная инженерия\Структуры и алгоритмы\DictionaryWithDuplicates\x64\Debug\DictionaryWithDuplicates.exe
